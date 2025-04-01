@@ -16,5 +16,8 @@ FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 enable_testing()
 
+# CLI option parser
+add_subdirectory(third_party/cxxopts)
+
 add_subdirectory(cram)
 add_subdirectory(cli)

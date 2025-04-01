@@ -1,6 +1,6 @@
 #pragma once
 
-#include "options.hpp"
+#include "config.hpp"
 #include "result.hpp"
 #include <filesystem>
 
@@ -10,10 +10,10 @@ namespace fs = std::filesystem;
 
 class Cram {
 private:
-  Options options_;
+  Config cfg_;
 
 public:
-  Cram(const Options &options);
+  Cram(const Config &cfg);
   ~Cram() = default;
 
   Result run();

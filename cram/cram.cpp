@@ -1,10 +1,10 @@
 #include "cram.hpp"
-#include "options.hpp"
+#include "config.hpp"
 #include <iostream>
 
 namespace cram {
 
-Cram::Cram(const Options &options) : options_{options} {}
+Cram::Cram(const Config &cfg) : cfg_{cfg} {}
 
 Result Cram::run() {
   std::cout << "baskemtball\n";
