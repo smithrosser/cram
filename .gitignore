@@ -34,3 +34,6 @@
 # CMake
 build/
 .cache
+
+# Misc
+build.sh
